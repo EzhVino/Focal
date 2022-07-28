@@ -29,8 +29,16 @@ void ModifyMassive(string[] massive, int elementSize)
 
     if (newSize != 0)
     {
-
+        string[] newMassive = new string[newSize];
+        for (int i = 0, j = 0; j < newSize; i++)
+        {
+            if (massive[i].Length <= elementSize)
+            {
+                newMassive[j] = massive[i];
+                j++;
+            }
+        }
+        ShowArray(newMassive);
     }
-
     else Console.WriteLine("Massive contains no required elements");
 }
