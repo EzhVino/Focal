@@ -17,3 +17,20 @@ void ShowArray(string[] array)
     }
     Console.WriteLine();
 }
+
+void ModifyMassive(string[] massive, int elementSize)
+{
+    int newSize = 0;
+    for (int index = 0; index < massive.Length; index++)
+    {
+        if (massive[index].Length <= elementSize)
+            newSize++;
+    }
+
+    if (newSize != 0)
+    {
+
+    }
+
+    else Console.WriteLine("Massive contains no required elements");
+}
