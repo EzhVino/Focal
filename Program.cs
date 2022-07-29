@@ -42,3 +42,13 @@ void ModifyMassive(string[] massive, int elementSize)
     }
     else Console.WriteLine("Massive contains no required elements");
 }
+
+Console.Clear();
+
+Console.WriteLine("Specify size of the massive:");
+int arraySize = Convert.ToInt32(Console.ReadLine());
+
+string[] myArray = CreateArray(arraySize);
+Console.WriteLine();
+
+ModifyMassive(myArray, 3);
