@@ -49,6 +49,7 @@ Console.WriteLine("Specify size of the massive:");
 int arraySize = Convert.ToInt32(Console.ReadLine());
 
 string[] myArray = CreateArray(arraySize);
+ShowArray(myArray);
 Console.WriteLine();
 
 ModifyMassive(myArray, 3);
